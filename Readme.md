@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Андрей Наконечный](https://up.htmlacademy.ru/adaptive/22/user/1724753).
-* Наставник: `Неизвестно`.
+* Наставник: [Геннадий Максимов](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
