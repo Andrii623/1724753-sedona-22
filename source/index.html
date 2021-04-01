@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<html class="page"  lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title> Личный проект «Sedona»</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+    </a>
+    <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list .site-list">
+                <li class="site-list__item site-list__item--active">
+                    <a> Главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="photo.html"> Фото и видео </a>
+                </li>
+                <li class="site-list__item">
+                    <a href="form.html"> Форма отзыва </a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#"> HTML Academy </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+  <main class="page-main">
+      <div>
+        <img src="img/intro.png " width="1200" height="518" alt="Интро Седоны">
+      </div>
+      <section class="stats">
+        <div class="stats__wrapper">
+            <header class="stats__header">
+                <h2 class="visually-hidden">Информация </h2>
+                <p class="stats__slogan">
+                    СЕДОНА — небольшой <br>
+                    городок в АРИЗОНЕ,<br> 
+                    засуживающий большего!</p>
+                  <p class="stats__intro">
+                    Рассмотрим 5 причин, по которым <br>
+                    Седона круче, чем гранд каньон!</p>
+            </header>
+        </div>
+        <div>
+          <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+          <p>— №1 —</p>
+          <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <img src="img/photo-citi.png" width="520" height="260" alt="Фото города">
+          <ul>
+            <li>
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li><h3>Сувениры</h3> 
+              <p>не только китайского, но и местного производства!</p>
+            </li>
+            <li><h3>ЕДА</h3>
+              <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>ТАМ ЕСТЬ Мост дьявола</h2>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img src="img/photo-citi.png" width="520" height="260" alt="Фото города">
+        </div>
+        <div>
+          <ul class="list">
+            <li class="advantages__item--square" >
+              <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+              <p>— №3 —</p>
+              <p>ВСЕ интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item--road">
+              <h3>КРАСИВАЯ ДОРОГА</h3>
+              <p>— №4 —</p>
+              <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </li>
+            <li class="advantages__item--few">
+              <h3>МАЛО ТУРИСТОВ</h3>
+              <p>— №5 —</p>
+              <p>Большинство едет в гранд каньони толпится там</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="btn" href="blank.html">Найти гостиницу</a>
+        </div>
+      </section>
+  </main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="map">
+      <img src="img/map.m.png" width="320" height="350" alt="Карта">
+    </div>
+    <div class="page-footer__social">
+      <b class="social__title">#visitSEDONA</b>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
