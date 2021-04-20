@@ -7,17 +7,17 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+          <img src="img/logotype-m.svg" width="102" height="84" alt="Логотип Седоны">
       </a>
-        <button  class="main-nav__toggle visually-hidden" type="button"  aria-label="открыть/закрыть">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="открыть/закрыть">Открыть меню</button>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
+                <li class="site-list__item">
                   <a class="site-list__link" href="index.html">Главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="#nowhere">Фото и видео</a>
+                  <a class="site-list__link site-list__item--active" href="catalog.html">Фото и видео</a>
                 </li>
                 <li class="site-list__item">
                   <a class="site-list__link" href="form.html">Форма отзыва</a>
@@ -30,11 +30,9 @@
         </nav>
       </header>
     <main class="page-main">
-      <section class="welcome">
-        <div class="welcome__wrapper">
+        <div class="welcome welcome__wrapper">
           <img src="img/logo_welcome.svg" width="229" height="39" alt="Добро пожаловать в прекрасную Седону">
         </div>
-      </section>
       <section class="photos">
         <div class="photos__wrapper">
           <header class="photos__header content-header">
@@ -59,11 +57,9 @@
                     Автор фото: Борис
                   </p>
                 </div>
-                <div class="photos__likes likes">
-                  <span class="likes__count">
+                  <p class="likes__count">
                     1350
-                  </span>
-                </div>
+                  </p>
               </div>
             </li>
             <li class="photos__item">
@@ -76,14 +72,12 @@
                     Местная растительность
                   </h2>
                   <p class="description__author">
-                    Автор фото: Сергей
+                    Автор фото:Сергей
                   </p>
                 </div>
-                <div class="photos__likes likes">
-                  <span class="likes__count">
+                  <p class="likes__count">
                     143
-                  </span>
-                </div>
+                  </p>
               </div>
             </li>
             <li class="photos__item">
@@ -99,11 +93,9 @@
                     Автор фото: Петр
                   </p>
                 </div>
-                <div class="photos__likes likes">
-                  <span class="likes__count">
+                  <p class="likes__count">
                     96
-                  </span>
-                </div>
+                  </p>
               </div>
             </li>
             <li class="photos__item">
@@ -119,11 +111,9 @@
                     Автор фото: Антон
                   </p>
                 </div>
-                <div class="photos__likes likes">
-                  <span class="likes__count">
+                  <p class="likes__count">
                     254
-                  </span>
-                </div>
+                  </p>
               </div>
             </li>
           </ul>

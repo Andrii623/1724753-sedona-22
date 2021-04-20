@@ -7,9 +7,9 @@
 <body class="page__body">
 <header class="page-header">
     <a class="page-header__logo">
-    <img src="img/logotype-m.svg" width="102" height="84" alt="Логотип Седоны">
+      <img src="img/logotype-m.svg" width="102" height="84" alt="Логотип Седоны">
     </a>
-    <button  class="main-nav__toggle visually-hidden" type="button"  aria-label="открыть/закрыть">Открыть меню</button>
+    <button class="main-nav__toggle" type="button" aria-label="открыть/закрыть">Открыть меню</button>
   <nav class="main-nav">
   <div class="main-nav__wrapper">
     <ul class="main-nav__list site-list">
@@ -17,7 +17,7 @@
         <a class="site-list__link" href="index.html">Главная</a>
       </li>
       <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Фото и видео</a>
+        <a class="site-list__link" href="catalog.html">Фото и видео</a>
       </li>
       <li class="site-list__item">
         <a class="site-list__link site-list__link--active" href="form.html">Форма отзыва</a>
@@ -30,39 +30,37 @@
   </nav>
 </header>
 <main class="page-form">
-<h1 class="visually-hidden">Главная старница с отзывом</h1>
-<section class="screen-welcome">
-    <h2 class="visually-hidden">Добро пожаловать в великодушную Седону</h2>
-    <img class="screen-welcome__image" src="#" alt="Рекламное изображение ландшафта Седоны">
-</section>
+  <div class="welcome welcome__wrapper">
+    <img src="img/logo_welcome.svg" width="229" height="39" alt="Добро пожаловать в прекрасную Седону">
+  </div>
 <section class="review">
-    <h2 class="review__title form-title">Оставьте свой отзыв</h2>
-    <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+    <h2 class="review__title">Оставьте свой отзыв</h2>
+    <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
     достопримечательностях</p>
     <h2 class="visually-hidden">Форма для заполнения</h2>
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
     <fieldset class="form-fieldset">
         <legend class="form-title">Представьтесь:</legend>
-        <p class="form-fieldset__name">
+        <p class="form-fieldset__area form-fieldset__name">
         <label for="name">Имя*:</label>
-        <input type="text" id="name" name="name" placeholder="Петр">
+        <input class="form-fieldset__input" type="text" id="name" name="name" placeholder="Петр">
         </p>
-        <p class="form-fieldset__name">
+        <p class="form-fiedset__area form-fieldset__name">
         <label for="last-name">Фамилия*:</label>
         <input type="text" id="last-name" name="last-name" placeholder="Иванов">
         </p>
-        <p class="form-fieldset__name">
+        <p class="form-fiedset__area form-fieldset__name">
         <label for="patronymic" tabindex="0">Отчество:</label>
         <input type="text" id="patronymic" name="patronymic" placeholder="Александрович">
         </p>
     </fieldset>
     <fieldset class="form-fieldset">
         <legend class="form-title">Контактная информация:</legend>
-        <p class="form-fieldset__phone">
+        <p class="form-fiedset__area form-fieldset__phone">
         <label for="phone">Контактный телефон*:</label>
         <input type="tel" id="phone" name="tel" placeholder="Введите телефон">
         </p>
-        <p class="form-fieldset__email">
+        <p class="form-fiedset__area form-fieldset__email">
         <label for="mail">Электронная почта*:</label>
         <input type="email" id="mail" name="email" placeholder="Введите e-mail">
         </p>
@@ -73,15 +71,15 @@
         <li class="form-impression__item">
             <input class="visually-hidden" type="radio" name="impression" value="positive" id="impression-positive"
             checked>
-            <label for="impression-positive">Скорее положительное</label>
+            <label class="form-impression-label" for="impression-positive">Скорее положительное</label>
         </li>
         <li class="form-impression__item">
             <input class="visually-hidden" type="radio" name="impression" value="negative" id="impression-negative">
-            <label for="impression-negative">Скорее отрицательное</label>
+            <label class="form-impression-label" for="impression-negative">Скорее отрицательное</label>
         </li>
         <li class="form-impression__item">
             <input class="visually-hidden" type="radio" name="impression" value="refrain" id="impression-refrain">
-            <label for="impression-refrain">СЗатрудняюсь ответить</label>
+            <label class="form-impression-label" for="impression-refrain">Затрудняюсь ответить</label>
         </li>
         </ul>
     </fieldset>
@@ -90,19 +88,19 @@
         <ul class="form-places__list">
         <li class="form-places__item">
           <input class="visually-hidden" type="checkbox" name="place" value="bridge" id="places-bridge" checked>
-          <label for="places-bridge">Мост Дьявола</label>
+          <label class="form-places__label" for="places-bridge">Мост Дьявола</label>
         </li>
         <li class="form-places__item">
           <input class="visually-hidden" type="checkbox" name="place" value="mountain" id="places-mountain" checked>
-          <label for="places-mountain">Гора-Колокол</label>
+          <label class="form-places__label" for="places-mountain">Гора-Колокол</label>
         </li>
         <li class="form-places__item">
           <input class="visually-hidden" type="checkbox" name="place" value="park" id="places-park" checked>
-          <label for="places-park">Слайд-парк</label>
+          <label class="form-places__label" for="places-park">Слайд-парк</label>
         </li>
         <li class="form-places__item">
-          <input class="visually-hidden" type="checkbox" name="place" value="rocks" id="places-rocks">
-          <label for="places-rocks">Красные скалы</label>
+          <input class="disabled" type="checkbox" name="place" value="rocks" id="places-rocks">
+          <label class="form-places__label" for="places-rocks">Красные скалы</label>
         </li>
         </ul>
     </fieldset>
